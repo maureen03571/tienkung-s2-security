@@ -12,6 +12,7 @@ Raw TCP connection to port 25786 immediately returns a fixed 46-byte binary
 payload, no handshake or credential required.
 
 ## Technical detail
+Command used:
 python3 -c “
 import socket
 s = socket.create_connection((‘192.168.41.3’, 25786), timeout=5)
@@ -19,10 +20,13 @@ data = s.recv(4096)
 print(data.hex())
 print(len(data), ‘bytes’)
 “
+
 Output (identical on every connection attempt, including nmap's blind
 probe):
 000018040000000000000400400000000500400000000600004000fe0300000001000004080000000000003f0001
-46 bytes, fixed length, sent unprompted on connect.
+46 bytes
+
+46 bytes, fixed length, sent unprompted on connect — no handshake required.
 
 ## Impact
 Unknown pending schema decode — likely telemetry (joint state, IMU,
