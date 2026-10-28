@@ -1,0 +1,123 @@
+# Nmap 7.99 scan initiated Wed Oct 28 11:44:45 2026 as: /usr/lib/nmap/nmap -sV -O -p- -T4 -oN 01-recon/nmap-x86.txt 192.168.41.1
+Nmap scan report for ubuntu.local (192.168.41.1)
+Host is up (0.00020s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+53/tcp    open  domain        dnsmasq 2.90
+7123/tcp  open  snif?
+8080/tcp  open  http-proxy
+10097/tcp open  ssl/websocket WebSocket++ 0.8.2
+45377/tcp open  unknown
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7123-TCP:V=7.99%I=7%D=10/28%Time=6AE1B619%P=x86_64-pc-linux-gnu%r(R
+SF:PCCheck,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x20text/html
+SF:\r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charset=utf-8\x2
+SF:0http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20rel=\"styl
+SF:esheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head><body><h1
+SF:>403</h1></body></html>")%r(DNSVersionBindReqTCP,F5,"HTTP/1\.0\x20403\x
+SF:20Forbidden\r\ncontent-type:\x20text/html\r\ncontent-length:\x20173\r\n
+SF:\r\n<html><head><meta\x20charset=utf-8\x20http-equiv=\"Content-Language
+SF:\"\x20content=\"en\"/><link\x20rel=\"stylesheet\"\x20type=\"text/css\"\
+SF:x20href=\"/error\.css\"/></head><body><h1>403</h1></body></html>")%r(DN
+SF:SStatusRequestTCP,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x2
+SF:0text/html\r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charse
+SF:t=utf-8\x20http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20
+SF:rel=\"stylesheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head
+SF:><body><h1>403</h1></body></html>")%r(Help,F5,"HTTP/1\.0\x20403\x20Forb
+SF:idden\r\ncontent-type:\x20text/html\r\ncontent-length:\x20173\r\n\r\n<h
+SF:tml><head><meta\x20charset=utf-8\x20http-equiv=\"Content-Language\"\x20
+SF:content=\"en\"/><link\x20rel=\"stylesheet\"\x20type=\"text/css\"\x20hre
+SF:f=\"/error\.css\"/></head><body><h1>403</h1></body></html>")%r(SSLSessi
+SF:onReq,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x20text/html\r
+SF:\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charset=utf-8\x20h
+SF:ttp-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20rel=\"styles
+SF:heet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head><body><h1>4
+SF:03</h1></body></html>")%r(TerminalServerCookie,F5,"HTTP/1\.0\x20403\x20
+SF:Forbidden\r\ncontent-type:\x20text/html\r\ncontent-length:\x20173\r\n\r
+SF:\n<html><head><meta\x20charset=utf-8\x20http-equiv=\"Content-Language\"
+SF:\x20content=\"en\"/><link\x20rel=\"stylesheet\"\x20type=\"text/css\"\x2
+SF:0href=\"/error\.css\"/></head><body><h1>403</h1></body></html>")%r(TLSS
+SF:essionReq,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x20text/ht
+SF:ml\r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charset=utf-8\
+SF:x20http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20rel=\"st
+SF:ylesheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head><body><
+SF:h1>403</h1></body></html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.99%I=7%D=10/28%Time=6AE1B60A%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,10F3,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html;ch
+SF:arset=utf-8\r\n\r\n<!DOCTYPE\x20html><html\x20lang=\"\"><head><meta\x20
+SF:charset=\"utf-8\"><meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"
+SF:IE=edge\"><meta\x20name=\"viewport\"\x20content=\"width=device-width,in
+SF:itial-scale=1\"><link\x20rel=\"icon\"\x20href=\"/favicon\.ico\"><title>
+SF:</title><link\x20href=\"/css/chunk-146bd744\.495c46cf\.css\"\x20rel=\"p
+SF:refetch\"><link\x20href=\"/css/chunk-2fee1243\.69aa7dc5\.css\"\x20rel=\
+SF:"prefetch\"><link\x20href=\"/css/chunk-30fefb28\.e545bd57\.css\"\x20rel
+SF:=\"prefetch\"><link\x20href=\"/css/chunk-3534de92\.e3c9a3d2\.css\"\x20r
+SF:el=\"prefetch\"><link\x20href=\"/css/chunk-3815a0ce\.cee32339\.css\"\x2
+SF:0rel=\"prefetch\"><link\x20href=\"/css/chunk-38f6429e\.5a16b3d6\.css\"\
+SF:x20rel=\"prefetch\"><link\x20href=\"/css/chunk-420711aa\.83e51b88\.css\
+SF:"\x20rel=\"prefetch\"><link\x20href=\"/css/chunk-4213dadf\.f584e396\.cs
+SF:s\"\x20rel=\"prefetch\"><link\x20href=\"/css/chunk-42703080\.0854d35b\.
+SF:css\"\x20rel=\"prefetch\"><link\x20href=\"/css/chunk-56da330d\.e7894e3b
+SF:\.css\"\x20rel=\"prefetch\"><li")%r(HTTPOptions,EC,"HTTP/1\.1\x20501\x2
+SF:0Not\x20Implemented\r\nContent-Type:\x20text/html\r\nConnection:\x20clo
+SF:se\r\nDate:\x20Wed,\x2028\x20Oct\x202026\x2008:44:58\x20GMT\r\nContent-
+SF:Length:\x20102\r\n\r\n<HTML><HEAD>\n<TITLE>501\x20Not\x20Implemented</T
+SF:ITLE>\n</HEAD><BODY>\n<H1>Not\x20Implemented</H1>\n</BODY></HTML>\n")%r
+SF:(RTSPRequest,DF,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/html\r\nConnection:\x20close\r\nDate:\x20Wed,\x2028\x20Oct\x20202
+SF:6\x2008:44:58\x20GMT\r\nContent-Length:\x2094\r\n\r\n<HTML><HEAD>\n<TIT
+SF:LE>400\x20Bad\x20Request</TITLE>\n</HEAD><BODY>\n<H1>Bad\x20Request</H1
+SF:>\n</BODY></HTML>\n")%r(FourOhFourRequest,56,"HTTP/1\.0\x20200\x20OK\r\
+SF:nContent-Length:\x2015\r\nContent-Type:\x20application/json\r\n\r\n{'st
+SF:atus':'OK'}")%r(Socks5,DF,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConten
+SF:t-Type:\x20text/html\r\nConnection:\x20close\r\nDate:\x20Wed,\x2028\x20
+SF:Oct\x202026\x2008:44:58\x20GMT\r\nContent-Length:\x2094\r\n\r\n<HTML><H
+SF:EAD>\n<TITLE>400\x20Bad\x20Request</TITLE>\n</HEAD><BODY>\n<H1>Bad\x20R
+SF:equest</H1>\n</BODY></HTML>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port45377-TCP:V=7.99%I=7%D=10/28%Time=6AE1B619%P=x86_64-pc-linux-gnu%r(
+SF:RPCCheck,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x20text/htm
+SF:l\r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charset=utf-8\x
+SF:20http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20rel=\"sty
+SF:lesheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head><body><h
+SF:1>403</h1></body></html>")%r(DNSVersionBindReqTCP,F5,"HTTP/1\.0\x20403\
+SF:x20Forbidden\r\ncontent-type:\x20text/html\r\ncontent-length:\x20173\r\
+SF:n\r\n<html><head><meta\x20charset=utf-8\x20http-equiv=\"Content-Languag
+SF:e\"\x20content=\"en\"/><link\x20rel=\"stylesheet\"\x20type=\"text/css\"
+SF:\x20href=\"/error\.css\"/></head><body><h1>403</h1></body></html>")%r(D
+SF:NSStatusRequestTCP,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x
+SF:20text/html\r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20chars
+SF:et=utf-8\x20http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x2
+SF:0rel=\"stylesheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></hea
+SF:d><body><h1>403</h1></body></html>")%r(Help,F5,"HTTP/1\.0\x20403\x20For
+SF:bidden\r\ncontent-type:\x20text/html\r\ncontent-length:\x20173\r\n\r\n<
+SF:html><head><meta\x20charset=utf-8\x20http-equiv=\"Content-Language\"\x2
+SF:0content=\"en\"/><link\x20rel=\"stylesheet\"\x20type=\"text/css\"\x20hr
+SF:ef=\"/error\.css\"/></head><body><h1>403</h1></body></html>")%r(SSLSess
+SF:ionReq,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x20text/html\
+SF:r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charset=utf-8\x20
+SF:http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20rel=\"style
+SF:sheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head><body><h1>
+SF:403</h1></body></html>")%r(TerminalServerCookie,F5,"HTTP/1\.0\x20403\x2
+SF:0Forbidden\r\ncontent-type:\x20text/html\r\ncontent-length:\x20173\r\n\
+SF:r\n<html><head><meta\x20charset=utf-8\x20http-equiv=\"Content-Language\
+SF:"\x20content=\"en\"/><link\x20rel=\"stylesheet\"\x20type=\"text/css\"\x
+SF:20href=\"/error\.css\"/></head><body><h1>403</h1></body></html>")%r(TLS
+SF:SessionReq,F5,"HTTP/1\.0\x20403\x20Forbidden\r\ncontent-type:\x20text/h
+SF:tml\r\ncontent-length:\x20173\r\n\r\n<html><head><meta\x20charset=utf-8
+SF:\x20http-equiv=\"Content-Language\"\x20content=\"en\"/><link\x20rel=\"s
+SF:tylesheet\"\x20type=\"text/css\"\x20href=\"/error\.css\"/></head><body>
+SF:<h1>403</h1></body></html>");
+MAC Address: 68:ED:A4:90:B0:23 (Shenzhen Seavo Technology)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.19
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 28 11:46:32 2026 -- 1 IP address (1 host up) scanned in 108.05 seconds

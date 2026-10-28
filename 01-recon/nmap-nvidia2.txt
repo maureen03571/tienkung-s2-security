@@ -1,0 +1,51 @@
+# Nmap 7.99 scan initiated Wed Oct 28 11:45:33 2026 as: /usr/lib/nmap/nmap -sV -O -p- -T4 -oN 01-recon/nmap-nvidia2.txt 192.168.41.3
+Nmap scan report for 192.168.41.3
+Host is up (0.00094s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+25786/tcp open  unknown
+25787/tcp open  http    Uvicorn
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port25786-TCP:V=7.99%I=7%D=10/28%Time=6AE1B639%P=x86_64-pc-linux-gnu%r(
+SF:NULL,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\
+SF:xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(GenericLines,2E,"
+SF:\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0
+SF:\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(GetRequest,2E,"\0\0\x18\x0
+SF:4\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\
+SF:0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(HTTPOptions,2E,"\0\0\x18\x04\0\0\0\0\
+SF:0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\
+SF:0\0\0\0\0\0\?\0\x01")%r(RTSPRequest,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@
+SF:\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\
+SF:0\?\0\x01")%r(RPCCheck,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@
+SF:\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r
+SF:(DNSVersionBindReqTCP,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\
+SF:0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(
+SF:DNSStatusRequestTCP,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\
+SF:0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(He
+SF:lp,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xf
+SF:e\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(SSLSessionReq,2E,"\
+SF:0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\
+SF:0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(TerminalServerCookie,2E,"\0
+SF:\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0
+SF:\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(TLSSessionReq,2E,"\0\0\x18\x
+SF:04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0
+SF:\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(Kerberos,2E,"\0\0\x18\x04\0\0\0\0\0\
+SF:0\x04\0@\0\0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\
+SF:0\0\0\0\0\?\0\x01")%r(SMBProgNeg,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\
+SF:0\0\x05\0@\0\0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?
+SF:\0\x01")%r(X11Probe,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\
+SF:0\0\x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01")%r(Fo
+SF:urOhFourRequest,2E,"\0\0\x18\x04\0\0\0\0\0\0\x04\0@\0\0\0\x05\0@\0\0\0\
+SF:x06\0\0@\0\xfe\x03\0\0\0\x01\0\0\x04\x08\0\0\0\0\0\0\?\0\x01");
+MAC Address: 3C:6D:66:4D:E9:78 (Nvidia)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.19
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 28 11:45:52 2026 -- 1 IP address (1 host up) scanned in 18.31 seconds
