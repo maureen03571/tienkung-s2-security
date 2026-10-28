@@ -1,0 +1,13 @@
+# Don't commit raw captures, dumps, or credentials by accident
+*.pcap
+*.pcapng
+*.key
+*.pem
+secrets/
+**/evidence/*.mp4
+**/evidence/*.wav
+.env
+
+# OS/editor noise
+.DS_Store
+*.swp
